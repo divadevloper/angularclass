@@ -1,0 +1,40 @@
+.sub-container1 {
+  background-color: #f3f3f3;
+  height: 60vh;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.inner {
+  background-color: black;
+  width: 86%;
+  height: 60vh;
+  color: white;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 30px;
+}
+.footer-div {
+}
+.footer-div h3 {
+  font-size: 18px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
+  font-weight: bold;
+}
+.footer-div p {
+  font-size: 14px;
+}
+.big-line {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.line {
+  width: 80%;
+  height: 2px;
+  background-color: white;
+  border-radius: 30px;
+}

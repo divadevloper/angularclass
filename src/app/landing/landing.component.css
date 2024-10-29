@@ -1,22 +1,15 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-.container {
+.sub-container1 {
   background-color: #f3f3f3;
-  height: 15vh;
+  height: 90vh;
   align-self: center;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.sub-container {
+.inner {
   background-color: white;
   width: 86%;
-  height: 15vh;
-}
-.navbar1 {
+  height: 90vh;
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
+  justify-content: center;
 }

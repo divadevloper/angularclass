@@ -1,0 +1,34 @@
+<div class="container">
+  <form class="form">
+    <h6>{{ message }}</h6>
+    <p class="title">Login to your account</p>
+    <p class="message">Login now and get full access to our app.</p>
+
+    <label>
+      <input
+        required=""
+        placeholder=""
+        name="email-input"
+        [(ngModel)]="loginUserObj.email"
+        type="email"
+        class="input"
+      />
+      <span>Email</span>
+    </label>
+
+    <label>
+      <input
+        name="password-input"
+        placeholder=""
+        [(ngModel)]="loginUserObj.password"
+        type="password"
+        class="input"
+      />
+      <span>Password</span>
+    </label>
+
+    <button (click)="$event.preventDefault(); loginuser()" class="submit">
+      Login
+    </button>
+  </form>
+</div>

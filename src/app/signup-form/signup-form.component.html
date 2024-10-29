@@ -1,0 +1,79 @@
+<div class="container">
+  <form class="form">
+    <h6>{{ message }}</h6>
+    <p class="title">Register</p>
+    <p class="message">Signup now and get full access to our app.</p>
+
+    <label>
+      <input
+        placeholder=""
+        type="text"
+        [(ngModel)]="signuserObj.username"
+        name="user-input"
+        class="input"
+      />
+      <span>Username</span>
+    </label>
+
+    <label>
+      <input
+        required=""
+        placeholder=""
+        name="email-input"
+        type="email"
+        [(ngModel)]="signuserObj.email"
+        class="input"
+      />
+      <span>Email</span>
+    </label>
+
+    <label>
+      <input
+        name="password-input"
+        [(ngModel)]="signuserObj.password"
+        placeholder=""
+        type="password"
+        class="input"
+      />
+      <span>Password</span>
+    </label>
+    <label>
+      <input
+        [(ngModel)]="signuserObj.confirmPassword"
+        name="confirmPassword-input"
+        placeholder=""
+        type="password"
+        class="input"
+      />
+      <span>Confirm password</span>
+    </label>
+    <button (click)="$event.preventDefault(); submitform()" class="submit">
+      Submit
+    </button>
+    <p class="signin">Already have an acount ? <a href="#">Signin</a></p>
+  </form>
+</div>
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>UserName</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Confirm password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="signuser.length === 0">
+        <td>NO infromation added yet</td>
+      </tr>
+      <tr *ngFor="let user of signuser">
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.password }}</td>
+        <td>{{ user.confirmPassword }}</td>
+        <td><a routerLink="{{ user.email }}">see more</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
